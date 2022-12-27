@@ -33,8 +33,8 @@ const Home: NextPage = () => {
           <p className='text-md mb-1 p-4 pb-3 font-bold'>Top Communities</p>
 
           <div>
-            {subreddit.map((subreddit, index) => (
-              <SubredditRow key={subreddit.id} topic={subreddit.topic} index={index}/>
+            {subreddit?.map((subreddit, index) => (
+              <SubredditRow key={subreddit.id} topic={subreddit.topic} index={index} />
             ))}
           </div>
         </div>
